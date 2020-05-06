@@ -1,0 +1,10 @@
+﻿  main.cpp
+c:\users\harsh\documents\coding\sorting\sort_algos\sort_algos\main.cpp(6): warning C4018: '<': signed/unsigned mismatch
+c:\users\harsh\documents\coding\sorting\sort_algos\sort_algos\main.cpp(8): warning C4018: '<': signed/unsigned mismatch
+c:\users\harsh\documents\coding\sorting\sort_algos\sort_algos\main.cpp(23): warning C4018: '<': signed/unsigned mismatch
+c:\users\harsh\documents\coding\sorting\sort_algos\sort_algos\main.cpp(40): warning C4018: '<': signed/unsigned mismatch
+c:\users\harsh\documents\coding\sorting\sort_algos\sort_algos\main.cpp(51): warning C4018: '<': signed/unsigned mismatch
+c:\users\harsh\documents\coding\sorting\sort_algos\sort_algos\main.cpp(57): warning C4018: '<': signed/unsigned mismatch
+c:\users\harsh\documents\coding\sorting\sort_algos\sort_algos\main.cpp(76): warning C4018: '<': signed/unsigned mismatch
+c:\users\harsh\documents\coding\sorting\sort_algos\sort_algos\main.cpp(101): warning C4018: '<': signed/unsigned mismatch
+  sort_algos.vcxproj -> C:\Users\harsh\Documents\Coding\Sorting\sort_algos\Debug\sort_algos.exe
