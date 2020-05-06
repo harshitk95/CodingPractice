@@ -87,12 +87,42 @@ void merge_sort(std::vector<int>& ar) {
 /*******QUICK SORT*********/
 
 //partitioning of the array around a pivot
+
+
+
 void quick_sort(std::vector<int>& ar) {
+	// no duplicates for now
+	if (ar.size() > 1) {
+		int pivot = ar[0]; // first element is the pivot
 
-	int pivot = ar[0]; // first element is the pivot
-	std::vector<int> left;
-	std::vector<int> right;
+		std::vector<int> left;
 
+		std::vector<int> right;
+
+		for (int i = 1; i < ar.size(); i++) {
+			if (pivot < ar[i]) {
+				right.push_back(ar[i]);
+			}
+			else if (pivot > ar[i]){
+				left.push_back(ar[i]);
+			}
+		}
+
+		quick_sort(left);
+		quick_sort(right);
+
+		std::vector<int> sorted;
+		sorted.reserve(ar.size());
+
+		sorted.insert(sorted.end(), left.begin(), left.end());
+		sorted.push_back(pivot);
+		sorted.insert(sorted.end(), right.begin(), right.end());
+
+		ar = sorted;
+	
+
+	}
+	
 }
 
 int main() {
@@ -104,8 +134,9 @@ int main() {
 	
 	//insertion_sort(ar);
 	
-	merge_sort(ar);
+	//merge_sort(ar);
 	
+	quick_sort(ar);
 	
 	for (int i = 0; i < ar.size(); i++) {
 		std::cout << ar[i] << std::endl;
